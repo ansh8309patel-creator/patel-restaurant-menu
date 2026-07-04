@@ -1,0 +1,260 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#111;
+  color:white;
+}
+
+/* HEADER */
+
+header{
+  background:#000;
+  padding:20px;
+  text-align:center;
+  border-bottom:2px solid orange;
+}
+
+header h1{
+  color:orange;
+  margin-bottom:15px;
+}
+
+/* LOGIN */
+
+.login-container{
+  width:90%;
+  max-width:400px;
+  margin:100px auto;
+  background:#1c1c1c;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.login-container h1{
+  color:orange;
+  margin-bottom:20px;
+}
+
+.login-container input{
+  width:100%;
+  padding:15px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+}
+
+.login-container button{
+  width:100%;
+  padding:15px;
+  background:orange;
+  border:none;
+  border-radius:8px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* SEARCH */
+
+.search-box{
+  text-align:center;
+  margin:30px;
+}
+
+.search-box input{
+  width:80%;
+  max-width:400px;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  font-size:18px;
+}
+
+/* FILTERS */
+
+.filters{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+
+.filters button{
+  padding:12px 20px;
+  border:none;
+  border-radius:8px;
+  background:orange;
+  color:black;
+  font-size:16px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* MENU */
+
+.menu{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+  padding:20px;
+}
+
+/* CARD */
+
+.card{
+  background:#1c1c1c;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+  box-shadow:
+  0 0 10px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* FOOD IMAGE */
+
+.food-img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+/* CARD CONTENT */
+
+.card-content{
+  padding:20px;
+}
+
+.card-content h3{
+  font-size:24px;
+  margin-bottom:10px;
+  color:orange;
+}
+
+.card-content p{
+  margin-bottom:15px;
+  color:#ddd;
+  font-size:18px;
+}
+
+/* BUTTONS */
+
+.card-content button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  margin-top:10px;
+  font-size:16px;
+  font-weight:bold;
+}
+
+/* ADD BUTTON */
+
+.card-content button{
+  background:orange;
+  color:black;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn{
+  background:red !important;
+  color:white !important;
+}
+
+/* CART */
+
+.cart{
+  background:#1a1a1a;
+  margin:30px;
+  padding:25px;
+  border-radius:15px;
+}
+
+.cart h2{
+  color:orange;
+  margin-bottom:20px;
+}
+
+.cart input{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+}
+
+.cart button{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  background:orange;
+  color:black;
+  font-size:18px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* CUSTOMER CART */
+
+.cart ul{
+  list-style:none;
+  margin-bottom:20px;
+}
+
+.cart li{
+  padding:10px 0;
+  border-bottom:1px solid #333;
+}
+
+.cart h3{
+  margin-bottom:20px;
+}
+
+/* WHATSAPP BUTTON */
+
+.cart .whatsapp-btn{
+  background:#25D366;
+  color:white;
+}
+
+/* LOGOUT BUTTON */
+
+.logout-btn{
+  background:red;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  header h1{
+    font-size:28px;
+  }
+
+  .search-box input{
+    width:95%;
+  }
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Patel Restaurant</title>
+
+  <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>🍽️ Patel Restaurant</h1>
+
+    <p>
+      Scan • Order • Enjoy
+    </p>
+
+  </header>
+
+  <!-- SEARCH -->
+
+  <div class="search-box">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search food..."
+    >
+
+  </div>
+
+  <!-- FILTER BUTTONS -->
+
+  <div class="filters">
+
+    <button onclick="filterItems('all')">
+      All
+    </button>
+
+    <button onclick="filterItems('pizza')">
+      Pizza
+    </button>
+
+    <button onclick="filterItems('coffee')">
+      Coffee
+    </button>
+
+    <button onclick="filterItems('dessert')">
+      Dessert
+    </button>
+
+  </div>
+
+  <!-- MENU -->
+
+  <div class="menu"
+       id="menu-container">
+
+  </div>
+
+  <!-- CART -->
+
+  <div class="cart">
+
+    <h2>Your Cart</h2>
+
+    <ul id="cart-items"></ul>
+
+    <h3>
+      Total:
+      ₹<span id="cart-total">0</span>
+    </h3>
+
+    <button onclick="sendToWhatsApp()">
+      Order on WhatsApp
+    </button>
+
+  </div>
+
+  <!-- FIREBASE -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+  <!-- SCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
