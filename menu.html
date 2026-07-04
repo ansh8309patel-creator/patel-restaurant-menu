@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Patel Cafe Menu</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="menu-body">
+
+  <div class="menu-header">
+
+    <h1>🍽 Patel Cafe Menu</h1>
+
+  </div>
+
+  <div id="menu"></div>
+
+  <div class="cart-box">
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <h3 id="totalPrice">
+      Total: ₹0
+    </h3>
+
+    <button
+      onclick="orderWhatsApp()"
+      class="whatsapp-btn"
+    >
+
+      Order On WhatsApp
+
+    </button>
+
+  </div>
+
+  <!-- Firebase -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script>
+
+    const firebaseConfig = {
+
+      apiKey: "AIzaSyAtNFkNDAAis_ekvqQA_xTOzckkOeBA-Jc",
+
+      authDomain: "patel-restaurant.firebaseapp.com",
+
+      projectId: "patel-restaurant",
+
+      storageBucket: "patel-restaurant.appspot.com",
+
+      messagingSenderId: "146982041851",
+
+      appId: "1:146982041851:web:d892473fb9d3ec0bb2585e"
+
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    const db = firebase.firestore();
+
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
