@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Restaurant Menu</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h1>Patel Restaurant Menu</h1>
+
+  <div id="menu"></div>
+
+  <!-- Firebase -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script>
+
+    const firebaseConfig = {
+
+      apiKey: "AIzaSyAtNFkNDAAis_ekvqQA_xTOzckkOeBA-Jc",
+
+      authDomain: "patel-restaurant.firebaseapp.com",
+
+      projectId: "patel-restaurant",
+
+      storageBucket: "patel-restaurant.appspot.com",
+
+      messagingSenderId: "146982041851",
+
+      appId: "1:146982041851:web:d892473fb9d3ec0bb2585e"
+
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    const db = firebase.firestore();
+
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

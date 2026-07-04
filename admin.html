@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Restaurant Admin Dashboard</h1>
+
+  <button onclick="logout()" class="logout-btn">Logout</button>
+
+  <div class="admin-box">
+
+    <h2>Add New Dish</h2>
+
+    <input
+      type="text"
+      id="dishName"
+      placeholder="Dish Name"
+    >
+
+    <input
+      type="number"
+      id="dishPrice"
+      placeholder="Price"
+    >
+
+    <input
+      type="text"
+      id="dishImage"
+      placeholder="Image URL"
+    >
+
+    <input
+      type="text"
+      id="dishCategory"
+      placeholder="Category"
+    >
+
+    <button onclick="addDish()">
+      Add Dish
+    </button>
+
+  </div>
+
+  <div class="admin-box">
+
+    <h2>All Dishes</h2>
+
+    <div id="dishList"></div>
+
+  </div>
+
+  <!-- Firebase -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+  <!-- Firebase Config -->
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAtNFkNDAAis_ekvqQA_xTOzckkOeBA-Jc",
+      authDomain: "patel-restaurant.firebaseapp.com",
+      projectId: "patel-restaurant",
+      storageBucket: "patel-restaurant.appspot.com",
+      messagingSenderId: "146982041851",
+      appId: "1:146982041851:web:d892473fb9d3ec0bb2585e"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+  </script>
+
+  <script src="admin.js"></script>
+
+</body>
+</html>
